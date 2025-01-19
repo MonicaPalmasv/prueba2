@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Video</title>
+    <style>
+        /* CSS */
+        video {
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mi Video</h1>
+    <video id="miVideo" controls>
+        <source src="prueba2.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <script>
+        // JavaScript
+        const video = document.getElementById('miVideo');
+
+        // Ejemplo de función para reproducir el video
+        function reproducirVideo() {
+            video.play();
+        }
+
+        // Llamar a la función al hacer clic en el video
+        video.addEventListener('click', reproducirVideo);
+    </script>
+</body>
+</html>
